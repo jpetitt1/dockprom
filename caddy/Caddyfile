@@ -16,11 +16,11 @@
     reverse_proxy prometheus:9090
 }
 
-:9093 {
+:19093 {
     basicauth /* {
         {$ADMIN_USER} {$ADMIN_PASSWORD_HASH}
     }
-    reverse_proxy alertmanager:9093
+    reverse_proxy alertmanager:19093
 }
 
 :9091 {
